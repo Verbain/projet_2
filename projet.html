@@ -353,12 +353,59 @@
                             </div>
                             <!-- Fleche changement de slide -->
                             <div class="fleche">
-                                <!---espace pour les flèches-->
+                                <label class="go4p"> 
+                                    <img class="resizefleche-right" src="sources/arrow.svg">    
+                                </label>
+
                             </div>
                         </div>
 
 
                     </div>
+                </div>
+                            <!--SLIDE 4 DDK -->
+            <div class="placementdp4">
+                <div class="placement">
+                    <div class="fond">
+
+                        <div class="fleche">
+                            <label class="go3p"> 
+                                <img class="resizefleche" src="sources/arrow.svg">  
+                            </label>
+                        </div>
+        
+                        <div class="allignementV">
+
+                        <div class="allignementH">
+                            <div class="blackcube">
+
+                                <h3>Le saviez-vous?</h3>
+                                <p class="saviezvous"> En octobre 2019 la compagnie adobe a laisser fuiter 7.5 millions de compte rendant alors possible l'extraction et la consultations des données personnelles de plus 7.5 millions d'utilisateur </br>
+                                Un cas similaire est bien plus conséquent a eu lieux en octobre 2013 dénombrant lui plus de 38 million d'utilisateur touché!
+                                </p>
+                                <!-- source 7.5 m clubic == https://www.clubic.com/pro/it-business/securite-et-donnees/actualite-875334-adobe-fuiter-7-5-comptes-creative-cloud.html
+                                    38m The verge == https://www.theverge.com/2013/10/29/5042434/adobe-cyberattack-takes-38-million-passwords-photoshop-source-code -->
+                        
+                            </div>
+                            <div class="centercercleddk">
+                                <div class="placementcercle">
+                                    <div class="cercle"></div>
+                                    <div class="cercle"></div>
+                                    <div class="cercle"></div>
+                                    <div class="cercleselect"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        </div>
+                        <div class="fleche">
+
+                        </div>
+                    </div>
+                </div>
+
+
                 </div>
 
                 <div class="barre_de_fond">
@@ -1259,17 +1306,26 @@
             $('.go1p').click(function() {
                 $('.placementdp2').hide();
                 $('.placementd3p').hide();
+                $('.placementdp4').hide()
                 $('.placementdp').show();
             });
             $('.go2p').click(function() {
                 $('.placementdp').hide();
                 $('.placementdp3').hide();
+                $('.placementdp4').hide()
                 $('.placementdp2').show();
             });
             $('.go3p').click(function() {
                 $('.placementdp').hide();
                 $('.placementdp2').hide();
+                $('.placementdp4').hide()
                 $('.placementdp3').show();
+            });
+            $('.go4p').click(function() {
+                $('.placementdp').hide();
+                $('.placementdp2').hide();
+                $('.placementdp3').hide();
+                $('.placementdp4').show();
             });
 
             /*script 3d*/
