@@ -185,6 +185,7 @@
                                         <div class="cercleselect"></div>
                                         <div class="cercle"></div>
                                         <div class="cercle"></div>
+                                        <div class="cercle"></div>
                                     </div>
                                 </div>
                             </div>
@@ -265,6 +266,7 @@
                                     <div class="placementcercle">
                                         <div class="cercle"></div>
                                         <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
                                         <div class="cercle"></div>
                                     </div>
                                 </div>
@@ -348,6 +350,7 @@
                                         <div class="cercle"></div>
                                         <div class="cercle"></div>
                                         <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1078,6 +1081,7 @@
                                         <div class="cercleselect"></div>
                                         <div class="cercle"></div>
                                         <div class="cercle"></div>
+                                        <div class="cercle"></div>
                                     </div>
                                 </div>
                             </div>
@@ -1148,6 +1152,7 @@
                                     <div class="placementcercle">
                                         <div class="cercle"></div>
                                         <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
                                         <div class="cercle"></div>
                                     </div>
                                 </div>
@@ -1229,6 +1234,48 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- slide 4 ddk -->
+            <div class="placementd_3d_4">
+                <div class="placement">
+                    <div class="fond">
+
+                        <div class="fleche">
+                            <label class="go3_3d"> 
+                                <img class="resizefleche" src="sources/arrow.svg">  
+                            </label>
+                        </div>
+        
+                        <div class="allignementV">
+
+                        <div class="allignementH">
+                            <div class="blackcube">
+
+                                <h3>Le saviez-vous?</h3>
+                                <p class="saviezvous"> Blender est un des logiciel 3d les plus utilisé dans le monde professionel. </br>
+                                Blender à connus un essort important lors de la libération de son code source permettant à des équipes de développeur d'apporter de nouvelle fonctionnalités et rendant sont interface beaucoup plus ergonomique (principal défaults du logiciel avant la libération de sont code !)</p>
+                                <!--source : wikipedia blender https://fr.wikipedia.org/wiki/Blender -->
+                        
+                            </div>
+                            <div class="centercercleddk">
+                                <div class="placementcercle">
+                                    <div class="cercle"></div>
+                                    <div class="cercle"></div>
+                                    <div class="cercle"></div>
+                                    <div class="cercleselect"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        </div>
+                        <div class="fleche">
+
+                        </div>
+                    </div>
+                </div>
+
+
                 </div>
 
                 <div class="barre_de_fond">
@@ -1333,17 +1380,26 @@
             $('.go1_3d').click(function() {
                 $('.placementd_3d_2').hide();
                 $('.placementd_3d_3').hide();
+                $('.placementd_3d_4').hide();
                 $('.placementd_3d').show();
             });
             $('.go2_3d').click(function() {
                 $('.placementd_3d').hide();
                 $('.placementd_3d_3').hide();
+                $('.placementd_3d_4').hide();
                 $('.placementd_3d_2').show();
             });
             $('.go3_3d').click(function() {
                 $('.placementd_3d').hide();
                 $('.placementd_3d_2').hide();
+                $('.placementd_3d_4').hide();
                 $('.placementd_3d_3').show();
+            });
+            $('.go4_3d').click(function() {
+                $('.placementd_3d').hide();
+                $('.placementd_3d_2').hide();
+                $('.placementd_3d_3').hide();
+                $('.placementd_3d_4').show();
             });
         });
     </script>
