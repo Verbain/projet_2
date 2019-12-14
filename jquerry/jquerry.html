@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test jquerry</title>
+	
+</head>
+<body>
+	<h1>TEST JQUERY</h1>
+<button id='show'>show</button>
+<button id='hide'>hide</button>
+
+<script src="jquery_3.4.1.js"> </script>
+
+<script >
+	$(document).ready(function()
+	{
+		$('#show').click(function()
+		{
+			$('h1').show();
+		});
+
+		$('#hide').click(function()
+		{
+			$('h1').hide();
+		});
+	});
+</script>
+
+
+</body>
+</html>

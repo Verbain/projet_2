@@ -8,6 +8,9 @@
     <!--ajout de la typo mozzila -->
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
     <!-- FIN TYPO -->
+    <!-- AJOUT JQUERY -->
+    <script src="jquerry/jquery_3.4.1.js"></script>
+    <!-- FIN JQUERY -->
 </head>
 <!--fefbeu-->
 
@@ -1188,16 +1191,82 @@
         </div>
     </div>
     <!-- PARTIE 3 PRESENTATION DES LOGICIEL FIN -->
-    <!-- PARTIE 4 QUIZZ -->
-    <div class="quizz">
-        <h2>le Quizz</h2>
-    </div>
-    <!-- PARTIE 4 QUIZZ FIN -->
     <!-- FOOTER -->
     <footer>
 
     </footer>
     <!-- FOOTER FIN -->
+
+    <!-- PARTIE JQUERY -->
+    <script>
+        $(document).ready(function() {
+
+            /*script partie Montage_video */
+
+            $('.go1').click(function()
+            {
+                $('.placementd2').hide();
+                $('.placementd3').hide();
+                $('.placementd4').hide();
+                $('.placementd').show();
+            });
+            $('.go2').click(function()
+            {
+                $('.placementd').hide();
+                $('.placementd3').hide();
+                $('.placementd4').hide();
+                $('.placementd2').show();
+            });
+            $('.go3').click(function()
+            {
+                $('.placementd').hide();
+                $('.placementd2').hide();
+                $('.placementd4').hide();
+                $('.placementd3').show();
+            });
+            $('.go4').click(function()
+            {
+                $('.placementd').hide();
+                $('.placementd2').hide();
+                $('.placementd3').hide();
+                $('.placementd4').show();
+            });
+
+            /* script partie vecteur */
+            $('.go1v').click(function()
+            {
+                $('.placementdv2').hide();
+                $('.placementdv3').hide();
+                $('.placementdv4').hide();
+                $('.placementv').show();
+            });
+            $('.go2v').click(function()
+            {
+               $('.placementv').hide();
+                $('.placementdv3').hide();
+                $('.placementdv4').hide();
+                $('.placementdv2').show();
+            });
+            $('.go3v').click(function()
+            {
+                $('.placementv').hide();
+                $('.placementdv2').hide();
+                $('.placementdv4').hide();
+                $('.placementdv3').show();
+            });
+            $('.go4v').click(function()
+            {
+                $('.placementv').hide();
+                $('.placementdv2').hide();
+                $('.placementdv3').hide();
+                $('.placementdv4').show();
+            });
+
+        });
+
+
+        </script>
+
 </body>
 
 </html>
