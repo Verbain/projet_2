@@ -214,8 +214,9 @@ du site*/
     
     .texte_avantage {
         font-size: 15px;
-        padding-right: 25px;
-        padding-bottom: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
     }
     
     .texte_krita {
@@ -230,10 +231,11 @@ du site*/
         justify-content: space-around;
         margin-bottom: 2px;
         height: 170px;
+        width: 300px;
     }
     
     .check {
-        width: 8%;
+        width: 30px;
         margin-left: 25px;
         margin-right: 15px;
     }
@@ -550,6 +552,14 @@ du site*/
         flex-direction: column;
         justify-content: center;
     }
+    /*REDIRECTION*/
+    .acarte{
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-decoration: none;
+    }
+
     /*-------RESPONSIVE TIME --------*/
     
     @media (min-height: 600px)
