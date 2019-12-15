@@ -17,18 +17,18 @@
 <body>
     <!--HEADER -->
     <header>
-        <img class="logo" src="sources/w_mozilla.png">
+        <a class="toph" href="#top"><img class="logo" src="sources/w_mozilla.png" ></a>
 
 
         <!--menu burger-->
         <label class="label_menu" for="switch">&#9776;</label>
         <input class="input_checkbox" type="checkbox" id="switch">
         <nav>
-            <ul>
-                <li><a class="typo-h" href="#1">Photomontage</a></li>
-                <li><a class="typo-h" href="#2">Montage video</a></li>
-                <li><a class="typo-h" href="#3">Vecteur</a></li>
-                <li><a class="typo-h" href="#4">3D</a></li>
+            <ul class="ulheader">
+                <li class="liheader"><a class="typo-h" href="#1">Photomontage</a></li>
+                <li class="liheader"><a class="typo-h" href="#2">Montage video</a></li>
+                <li class="liheader"><a class="typo-h" href="#3">Vecteur</a></li>
+                <li class="liheader"><a class="typo-h" href="#4">3D</a></li>
             </ul>
 
         </nav>
@@ -36,6 +36,9 @@
     <!-- HEADER FIN -->
     <!-- PARTIE 1 = OPEN SOURCE DEFINITION -->
     <div class="OS">
+        <div id="top" class="top">
+            <!--div retour haut de page -->
+        </div>
         <div class="page_start">
             <img class=image_debut src="sources/image_Web.svg" alt="Image vectorielle de l'open-source">
             <div class="groupe_texte_opensource">
@@ -970,7 +973,7 @@
                         <div class="fond">
 
                             <div class="fleche">
-                                <label class="go3"> 
+                                <label class="go3v"> 
                                 <img class="resizefleche" src="sources/arrow.svg">  
                             </label>
                             </div>
@@ -1225,12 +1228,15 @@
                                         <div class="cercle"></div>
                                         <div class="cercle"></div>
                                         <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Fleche changement de slide -->
                             <div class="fleche">
-                                <!-- DIV fantôme pour que la carte reste centré même sans fleche -->
+                                <label class="go4_3d"> 
+                                    <img class="resizefleche-right" src="sources/arrow.svg">  
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -1287,7 +1293,29 @@
     <!-- PARTIE 3 PRESENTATION DES LOGICIEL FIN -->
     <!-- FOOTER -->
     <footer>
-
+        <div class="placementlogfoot">
+            <a href="#topf"> <img class="logofooter" src="sources/w_mozilla.png"> </a>
+        </div>
+        <hr/>
+       <div class="colf">
+            <ul class="ulfoot" >   
+                <li class="lifoot"><a class="afoot" id="donate-footer-btn" href="https://donate.mozilla.org/" >Faire un don</a></li>
+                <li class="lifoot"><a class="afoot" href="https://www.mozilla.org/about/legal/terms/mozilla/" >Mentions légales</a></li>
+                <li class="lifoot"><a class="afoot" href="https://creativecommons.org/licenses/by/4.0" >Licence</a></li>
+            </ul>
+        </div>
+        <hr/>
+        <div class="colf">
+            <ul class="ulfoot">
+                <li class="lifoot"><a class="afoot" href="https://www.mozilla.org/about/governance/policies/participation/" >Directives relatives à la participation</a></li>
+                <li class="lifoot"><a class="afoot" href="https://mozilla.org/privacy/websites/" >Confidentialité</a></li>
+                <li class="lifoot"><a class="afoot" href="https://www.mozilla.org/privacy/websites/#cookies" >Cookies</a></li>
+            </ul>
+        </div>
+        <hr/>
+        <div class="phrasefoot">
+            <p class="pfoot" >Mozilla est une organisation internationale à but non lucratif, déterminée à vous faire reprendre le contrôle de votre vie numérique en ligne et à définir l’avenir du Web dans l’intérêt de tous. Plus d’informations sur <a class="afoot" href="https://foundation.mozilla.org">foundation.mozilla.org</a></p>
+        </div>
     </footer>
     <!-- FOOTER FIN -->
 
