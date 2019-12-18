@@ -590,3 +590,211 @@ du site*/
             justify-content: space-around;
         }
     }
+    @media (max-width: 900px) /* media query 900 px */
+    {
+        .apercu1,
+        .apercu2
+        {
+            display: none;
+        }
+        .apercuslogcol
+        {
+            display: none;
+        }
+        .carte
+        {
+            margin-left: 200px;
+        }
+        .blackcube {
+        
+        width: 500px;
+        height: 200px;
+        border-radius: 15px;
+        }
+        .saviezvous {
+        color: white;
+        font-size: 15px;
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-right: 25px;
+        text-align: justify;
+        }
+    
+        h3 {
+        color: white;
+        font-size: 25px;
+        margin-left: 25px;
+        text-decoration: underline;
+        text-decoration-color: white;
+        text-underline-position: under; 
+        }
+        .page_start
+        {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .image_debut
+        {
+            margin-left: 250px;
+        }
+
+    }
+     @media (max-width: 770px)
+     {
+        .phrasefond
+        {
+            width: 400px;
+        }
+        .carte
+        {
+            margin-left: 100px;
+        }
+        .pfoot
+        {
+            font-size: 8px;
+        }   
+        .afoot {
+        color: white;
+        font-size: 8px;
+        text-decoration: none;
+        padding-top: 30px;
+        }
+        .logofooter {
+        height: 25%;
+        }
+        .blackcube {
+        
+        width: 350px;
+        height: 170px;
+        margin-top: 80px;
+
+        }
+        .saviezvous {
+        color: white;
+        font-size: 13px;
+
+        }
+     }
+     @media (max-width: 550px)
+     {
+        .image_debut
+        {
+            margin-left: 120px;
+        }
+        .opensource_text
+        {
+            font-size: 40px;
+        }
+        .opensource_text_petit
+        {
+            font-size: 15px;
+        }
+        td
+        {
+            font-size:10px; 
+        }
+        .phrasetab {
+        font-size: 10px;
+
+        }
+        .phrase_alternatives
+        {
+            font-size: 10px;
+        }
+        .phrasefond
+        {
+            width: 250px;
+            margin-left: 50px;
+        }
+        .logophrase,
+        .logophrase_3d
+        {
+            width: 20px;
+            height: 20px;
+            margin-top: 10px;
+        }
+        .carte
+        {
+        width: 200px;
+        height: 315px;
+        margin-left: 50px;
+        }
+        .check
+        {
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+        }
+        .texte_avantage
+        {
+            font-size: 10px;
+        }
+        .texte,
+        .texte_krita
+        {
+            width: 180px;
+            margin-left: 10px;
+        }
+        .fleche
+         {
+
+            width: 20px;
+         }
+         .dlbutton
+         {
+            width: 100px;
+            height: 50px;
+         }
+        .fond,
+        .fond2,
+        .fond3 {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        background-color: #E7E5E2;
+        }
+        h1
+        {
+            font-size: 20px;
+        }
+        .resizefleche {
+        width: 20px;
+        height: 20px;
+        }
+    
+        .resizefleche-right {
+        width: 20px;
+        height: 20px;
+        }
+        .blackcube {
+        
+        width: 300px;
+        height: 150px;
+        margin-top: 100px;
+        }
+        .saviezvous {
+        color: white;
+        font-size: 10px;
+
+        }
+    
+        h3 {
+        color: white;
+        font-size: 15px;
+        margin-left: 25px;
+        }
+        .buttonplacement
+        {
+            font-size: 15px;
+        }
+        .title {
+        font-size: 15px;
+        }
+        .resize {
+        width: 15px;
+        height: 15px;
+        }
+
+     }
