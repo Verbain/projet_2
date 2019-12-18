@@ -586,47 +586,4 @@ du site*/
                 justify-content: space-around;
             }
         }
-        
-        @media (max-width: 900px) {
-            header {
-                display: block;
-            }
-            .label_menu {
-                color: white;
-                display: block;
-                float: right;
-                margin-right: 5%;
-                margin-top: 2%;
-            }
-            #switch:checked+nav {
-                display: block;
-            }
-            nav {
-                display: none;
-                background-color: #FF4F5E;
-                width: 100%;
-            }
-            ul {
-                margin: 0px;
-                width: 100%;
-                flex-direction: column;
-                padding-left: 20px;
-            }
-            li {
-                margin-right: 0px;
-                margin-top: 0px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                width: 100%;
-            }
-            .logo {
-                height: 70%;
-                margin-top: 2%;
-            }
-            .ulheader {
-                margin-top: 0%;
-            }
-            .typo-h {
-                color: white;
-            }
-        }
+
