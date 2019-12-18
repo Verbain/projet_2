@@ -1,44 +1,1528 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Mozzila foundation</title>
-        <link rel="stylesheet" type="text/css" href="projet.css">
-        <!--ajout de la typo mozzila -->
-        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
-        <!-- FIN TYPO -->
-    </head>
 
-    <body>
-    	<!--HEADER -->
-    	<header>
-    		<img class="logo" src="source/logo/w_mozilla.png">
-    	</header>
-    	<!-- HEADER FIN -->
-    	<!-- PARTIE 1 = OPEN SOURCE DEFINITION -->
-    	<div class="OS">
-    		<h2 class="text">L'open source ?</h2>
-    	</div>
-    	<!-- PARTIE 1 = OPEN SOURCE DEFINITION FIN -->
-    	<!-- PARTIE 2 TABLEAU OPEN SOURCE -->
-    	<div class="tableau">
-    		<h2>Tableau comparatif Open source</h2>
-    	</div>
-    	<!-- PARTIE 2 TABLEAU OPENSOURCE FIN -->
-    	<!-- PARTIE 3 PRESENTATION DES LOGICIEL-->
-    	<div class="log">
-    		<h2>Présentation des logiciels</h2>
-    	</div>
-    	<!-- PARTIE 3 PRESENTATION DES LOGICIEL FIN -->
-    	<!-- PARTIE 4 QUIZZ -->
-    	<div class="quizz">
-    		<h2>le Quizz</h2>
-    	</div>
-    	<!-- PARTIE 4 QUIZZ FIN -->
-    	<!-- FOOTER -->
-    	<footer>
-    		
-    	</footer>
-    	<!-- FOOTER FIN -->
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <title>Mozzila foundation</title>
+    <link rel="stylesheet" type="text/css" href="projet.css">
+    <!--ajout de la typo mozzila -->
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,400,400i&display=swap" rel="stylesheet">
+    <!-- FIN TYPO -->
+    <!-- AJOUT JQUERY -->
+    <script src="jquerry/jquery_3.4.1.js"></script>
+    <!-- FIN JQUERY -->
+</head>
+<!--fefbeu-->
+
+<body>
+    <!--HEADER -->
+    <header>
+        <a class="toph" href="#top"><img class="logo" src="sources/w_mozilla.png"></a>
+
+
+        <!--menu burger-->
+        <label class="label_menu" for="switch">&#9776;</label>
+        <input class="input_checkbox" type="checkbox" id="switch">
+        <nav>
+            <ul class="ulheader">
+                <li class="liheader"><a class="typo-h" href="#1">Photomontage</a></li>
+                <li class="liheader"><a class="typo-h" href="#2">Montage video</a></li>
+                <li class="liheader"><a class="typo-h" href="#3">Vecteur</a></li>
+                <li class="liheader"><a class="typo-h" href="#4">3D</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- HEADER FIN -->
+    <!-- PARTIE 1 = OPEN SOURCE DEFINITION -->
+    <div class="OS">
+        <div id="top" class="top">
+            <!--div retour haut de page -->
+        </div>
+        <div class="page_start">
+            <img class=image_debut src="sources/image_Web.svg" alt="Image vectorielle de l'open-source">
+            <div class="groupe_texte_opensource">
+                <p class="opensource_text">l'Open Source ?</p>
+                <p class="opensource_text_petit">L’Open Source est une méthode d’ingénierie logicielle qui consiste à développer un <br> logiciel, ou des composants logiciels, et de laisser en libre accès le code source produit.</p>
+            </div>
+        </div>
+    </div>
+    <!-- PARTIE 1 = OPEN SOURCE DEFINITION FIN -->
+    <!-- PARTIE 2 TABLEAU OPEN SOURCE -->
+    <div class="tableau">
+        <div class="screen">
+            <div class="allignementV">
+                <div class="allignementH">
+                    <table>
+                        <!-- première ligne du tableau En-tête -->
+                        <thead>
+                            <tr>
+                                <td class="cuttop cutleft"></td>
+                                <td class="cuttop title">Open source</td>
+                                <td class="cuttop cutright title">Logiciel propriétaire</td>
+                            </tr>
+                        </thead>
+                        <!-- deuxième ligne "Prise en charge .... " -->
+                        <tbody>
+                            <tr>
+                                <td class="cutleft">Prise en charge des entensions fichiers</td>
+                                <td></td>
+                                <td class="cutright"><img class="resize" src="sources/check-solid.svg"></td>
+                            </tr>
+                            <!-- Troisième ligne "Plugins" -->
+                            <tr>
+                                <td class="cutleft">plugins</td>
+                                <td><img class="resize" src="sources/check-solid.svg"></td>
+                                <td class="cutright"><img class="resize" src="sources/check-solid.svg"></td>
+                            </tr>
+                            <!-- Quatrième ligne "Forum" -->
+                            <tr>
+                                <td class="cutleft">forum</td>
+                                <td><img class="resize" src="sources/check-solid.svg"></td>
+                                <td class="cutright"><img class="resize" src="sources/check-solid.svg"></td>
+                            </tr>
+                            <!-- Cinquième ligne "Mise a jour" -->
+                            <tr>
+                                <td class="cutleft">Mise à jour</td>
+                                <td><img class="resize" src="sources/check-solid.svg"></td>
+                                <td class="cutright"><img class="resize" src="sources/check-solid.svg"></td>
+                            </tr>
+                            <!-- sixième ligne "Service client" -->
+                            <tr>
+                                <td class="cutleft">Service client</td>
+                                <td><img class="resize" src="sources/check-solid.svg"></td>
+                                <td class="cutright"><img class="resize" src="sources/check-solid.svg"></td>
+                            </tr>
+                            <!-- septième ligne "Gestion de la vie privé" -->
+                            <tr>
+                                <td class="cutleft">Gestion de la vie privé</td>
+                                <td><img class="resize" src="sources/check-solid.svg"></td>
+                                <td class="cutright"></td>
+                            </tr>
+                            <!-- Huitième ligne "Accèssibilité du code source" -->
+                            <tr>
+                                <td class="cutleft">Accèssibilité au code source</td>
+                                <td><img class="resize" src="sources/check-solid.svg"></td>
+                                <td class="cutright"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- texte fin de tableau -->
+                    <p class="phrasetab"> Les solutions Open Source permettent d'accéder beaucoup plus rapidement à l'innovation. Les solutions Open Source sont pas monolithiques, elles sont en fait très modulables.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PARTIE 2 TABLEAU OPENSOURCE FIN -->
+    <!-- PARTIE 3 PRESENTATION DES LOGICIEL-->
+    <div class="log">
+        <div id="1" class="recepmenu">
+            <!-- DIV reception header -->
+        </div>
+        <!-- PHOTOMONTAGE -------------------------->
+        <div class="photomontage">
+            <div class="screen">
+                <!-- SLIDE 1 -->
+                <div class="placementdp">
+                    <div class="placement">
+                        <div class="fond">
+
+                            <div class="fleche">
+                                <!-- DIV fantôme pour que la carte reste centré même sans fleche -->
+                            </div>
+                            <div class="placement">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Adobe illustrator,Corel Draw, Affinity Designer:</p>
+                                    <img class="logophrase" src="sources/photoshop.png">
+                                    <img class="logophrase" src="sources/clip_studio_paint.png">
+                                    <img class="logophrase" src="sources/photofiltre.png">
+
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement">
+                                        <div class="carte">
+
+                                            <img class="logocarte_gimp" src="sources/logo_gimp.png">
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Prise en charge des tablettes à stylet </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Prise en charge des formats JPEG et TIFF , GIF , PNG et <br>. GIMP </p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> C'est un logiciel totalement gratuit </p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=R4RI2zBT4e0"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/GNOME/gimp"> code source</a>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+                                        <div class="taille_apercu1">
+                                            <img class="apercu1" src="sources/img_gimp_1.png">
+                                        </div>
+                                        <div class="taille_apercu2">
+                                            <img class="apercu2" src="sources/img_gimp_2.png">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go2p"> 
+									<img class="resizefleche-right" src="sources/arrow.svg">	
+								</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--SLIDE 2 -->
+                <div class="placementdp2">
+                    <div class="placement">
+                        <div class="fond">
+
+                            <div class="fleche">
+                                <label class="go1p"> 
+									<img class="resizefleche" src="sources/arrow.svg">	
+								</label>
+                                <!-- DIV fantôme pour que la carte reste centré même sans fleche -->
+                            </div>
+                            <div class="placement">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Adobe illustrator,Corel Draw, Affinity Designer:</p>
+                                    <img class="logophrase" src="sources/photoshop.png">
+                                    <img class="logophrase" src="sources/clip_studio_paint.png">
+                                    <img class="logophrase" src="sources/photofiltre.png">
+
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement">
+                                        <div class="carte">
+
+                                            <img class="logocarte_krita" src="sources/logo_krita.svg">
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <h2 class="titre_logo">KRITA</h2>
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte_krita">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Compatible  au format « .psd » </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte_krita">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> "Brush" personnalisés </p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte_krita">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">"stabilisateur de Brosses" pour des traits plus fluides </p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=dtgBEFG51Vc"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/KDE/krita"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+                                        <div class="taille_apercu1">
+                                            <img class="apercu1" src="sources/img_krita_1.png">
+                                        </div>
+                                        <div class="taille_apercu2">
+                                            <img class="apercu2_krita" src="sources/img_krita_2.png">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercle"></div>
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go3p"> 
+									<img class="resizefleche-right" src="sources/arrow.svg">	
+								</label>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- SLIDE 3 -->
+                <div class="placementdp3">
+                    <div class="placement">
+                        <div class="fond">
+
+                            <div class="fleche">
+                                <label class="go2p"> 
+									<img class="resizefleche" src="sources/arrow.svg">	
+								</label>
+                                <!-- DIV fantôme pour que la carte reste centré même sans fleche -->
+                            </div>
+                            <div class="placement">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Adobe illustrator,Corel Draw, Affinity Designer:</p>
+                                    <img class="logophrase" src="sources/photoshop.png">
+                                    <img class="logophrase" src="sources/clip_studio_paint.png">
+                                    <img class="logophrase" src="sources/photofiltre.png">
+
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement">
+                                        <div class="carte">
+
+                                            <img class="logocarte_photoflare" src="sources/logo_photoflare.png">
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <h2 class="titre_logo">PHOTOFLARE</h2>
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte_krita">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Simple d'utilisation </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte_krita">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Compatible avec le système GNU/Linux</p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte_krita">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Interface similaire à "photofiltre"</p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=lboHVxmJ_h0"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/PhotoFlare/photoflare"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+                                        <div class="taille_apercu1">
+                                            <img class="apercu1" src="sources/img_photoflare_1.png">
+                                        </div>
+                                        <div class="taille_apercu2">
+                                            <img class="apercu2" src="sources/img_photoflare_2.png">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go4p"> 
+                                    <img class="resizefleche-right" src="sources/arrow.svg">    
+                                </label>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--SLIDE 4 DDK -->
+                <div class="placementdp4">
+                    <div class="placement">
+                        <div class="fond">
+
+                            <div class="fleche">
+                                <label class="go3p"> 
+                                <img class="resizefleche" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+
+                            <div class="allignementV">
+
+                                <div class="allignementH">
+                                    <div class="blackcube">
+
+                                        <h3>Le saviez-vous?</h3>
+                                        <p class="saviezvous"> Depuis le 28 octobre 2019, la totalité des produits adobe ne sont plus utilisable au vénézuela suite a l'arrêt des échanges comerciaux entre le vénézuela et les Etats-unis.Ceci entraine donc la perte de donnés de
+                                            la totalité des comptes vénézueliens (un delais leur a était accorder afin de leur donner une chance de télécharger les donnés avant de ne plus y avoir accès) </p>
+                                        <!-- source THE Verge == https://www.theverge.com/2019/10/7/20904030/adobe-venezuela-photoshop-behance-us-sanctions -->
+                                        
+
+                                    </div>
+                                    <div class="centercercleddk">
+                                        <div class="placementcercle">
+                                            <div class="cercle"></div>
+                                            <div class="cercle"></div>
+                                            <div class="cercle"></div>
+                                            <div class="cercleselect"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="fleche">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="barre_de_fond">
+                    <h1> Photomontage </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="log2">
+        <div id="2" class="recepmenu">
+            <!-- DIV reception header -->
+        </div>
+
+        <!------- Montage_video ------------------------------->
+        <div class="Montage_video">
+            <div class="screen">
+                <!-- SLIDE 1 -->
+                <div class="placementd">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <!--div pour mettre des fleche a gauche-->
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Sony vegas pro, Adobe première pro, avid media composer:</p>
+                                    <img class="logophrase" src="source/logo/sony_vegas.jpg">
+                                    <img class="logophrase" src="source/logo/premiere_pro.png">
+                                    <img class="logophrase" src="source/logo/Media_Composer.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte" src="source/logo/kdenlive.png">
+                                            <h2 class="titre_logo">kdenlive</h2>
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Window, Mac, Linux </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Chromakey/Color Correction</p>
+                                                </div>                                                
+                                                <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Normalisation du son </p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=GN_VfvnQj5o"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/KDE/kdenlive"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+
+                                        <img class="apercu1" src="source/apercu_log/kdenlive_apercus.png">
+
+
+                                        <img class="apercu2" src="source/apercu_log/kdenlive_apercus2.png">
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go2"> 
+                                <img class="resizefleche-right" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SLIDE 2 -->
+                <div class="placementd2">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <label class="go1"> 
+                        <img class="resizefleche" src="sources/arrow.svg">  
+                    </label>
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Avid media composer:</p>
+                                    <img class="logophrase" src="source/logo/Media_Composer.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte" src="source/logo/cinelerra.png">
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <h2 class="titre_logo">cinelerra</h2>
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Linux </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Pas de limite de résolution</p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Bibliothèques d'effets spéciaux</p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=MWuVtbvZT5A&list=PLt0AGhIaGAUepwlj9avnxE8RfLzGwdTft"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/ratopi/CinelerraGG"> code source</a>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+
+                                        <img class="apercu1" src="source/apercu_log/cinelerra_apercus.jpg">
+
+
+                                        <img class="apercu2" src="source/apercu_log/cinelerra_apercus.jpg">
+
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercle"></div>
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go3"> 
+                                <img class="resizefleche-right" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE 3 -->
+                <div class="placementd3">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <label class="go2"> 
+                                <img class="resizefleche" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Sony vegas pro, Adobe première pro, avid media composer:</p>
+                                    <img class="logophrase" src="source/logo/sony_vegas.jpg">
+                                    <img class="logophrase" src="source/logo/premiere_pro.png">
+                                    <img class="logophrase" src="source/logo/Media_Composer.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte" src="source/logo/openshot.png">
+                                            <h2 class="titre_logo">openshot</h2>
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Window, Mac, Linux</p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Control time effect (accélération/ralentissement)</p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Timeline multiple</p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=5ggLCqQWXdI"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/OpenShot"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+
+                                        <img class="apercu1" src="source/apercu_log/openshot1.jpg">
+
+
+                                        <img class="apercu2" src="source/apercu_log/openshot2.jpg">
+
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go4"> 
+                                <img class="resizefleche-right" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SLIDE 4 DDK -->
+                <div class="placementd4">
+                    <div class="placement">
+                        <div class="fond">
+
+                            <div class="fleche">
+                                <label class="go3"> 
+                                <img class="resizefleche" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+
+                            <div class="allignementV">
+
+                                <div class="allignementH">
+                                    <div class="blackcube">
+
+                                        <h3>Le saviez-vous?</h3>
+                                        <p class="saviezvous"> Dans la plupart des domaines, l'utilisation d'un logiciel libre et open source apport un énorme avantage économique! tout ca est rendu possible grâce au développements partagès et donc a la réduction du coûts de
+                                            maintenance. </br>
+                                            Cette réduction est estimé à 36% dans la catégories recherche est développement d'une entreprise</p>
+                                        <!-- source framablog : https://framablog.org/2013/03/28/libres-conseils-40/ -->
+
+                                    </div>
+                                    <div class="centercercleddk">
+                                        <div class="placementcercle">
+                                            <div class="cercle"></div>
+                                            <div class="cercle"></div>
+                                            <div class="cercle"></div>
+                                            <div class="cercleselect"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="fleche">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="barre_de_fond">
+                    <h1> Montage vidéo </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="log3">
+        <div id="3" class="recepmenu">
+            <!-- DIV reception header -->
+        </div>
+        <!------- vecteur ------------------------------->
+        <div class="vecteur">
+            <div class="screen">
+                <!-- SLIDE 1 -->
+                <div class="placementv">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <!--div pour mettre des fleche a gauche-->
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Adobe illustrator, Coreldraw, affinity designer:</p>
+                                    <img class="logophrase" src="source/logo/illustrator.png">
+                                    <img class="logophrase" src="source/logo/coreldraw.png">
+                                    <img class="logophrase" src="source/logo/affinity_designer.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte" src="source/logo/inkscape.png">
+                                            <h2 class="titre_logo">inkscape</h2>
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Window, Mac, Linux </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Fonctionnalité avancé du SVG</p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Affichage anticrénelé (lissage) </p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=665n1JJQBwM"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/inkscape/inkscape"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+
+                                        <img class="apercu1" src="source/apercu_log/inkscape_apercus.jpg">
+
+
+                                        <img class="apercu2" src="source/apercu_log/inkscape_apercus2.jpg">
+
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go2v"> 
+                                <img class="resizefleche-right" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SLIDE 2 -->
+                <div class="placementdv2">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <label class="go1v"> 
+                        <img class="resizefleche" src="sources/arrow.svg">  
+                    </label>
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Coreldraw, affinity designer:</p>
+                                    <img class="logophrase" src="source/logo/coreldraw.png">
+                                    <img class="logophrase" src="source/logo/affinity_designer.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte" src="source/logo/sk1.png">
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <h2 class="titre_logo">Sk1</h2>
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Window, Linux </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> précision des couleurs</p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> svg edit</p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=fwAzaW9CMRY"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/sk1project/sk1-wx"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+
+                                        <img class="apercu1" src="source/apercu_log/sk1.png">
+
+                                        <img class="apercu2" src="source/apercu_log/sk12.jpg">
+
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercle"></div>
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go3v"> 
+                                <img class="resizefleche-right" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE 3 -->
+                <div class="placementdv3">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <label class="go2v"> 
+                                <img class="resizefleche" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Coreldraw, affinity designer:</p>
+                                    <img class="logophrase" src="source/logo/coreldraw.png">
+                                    <img class="logophrase" src="source/logo/affinity_designer.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte" src="source/logo/karbon.png">
+                                            <h2 class="titre_logo">karbon</h2>
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> Window, Mac, Linux</p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Customisable</p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Facile d'utilisation</p>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=t4MbAN50BoE"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/karbonfm"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+
+                                        <img class="apercu1" src="source/apercu_log/karbon1.png">
+
+
+                                        <img class="apercu2" src="source/apercu_log/karbon2.png">
+
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go4v"> 
+                                <img class="resizefleche-right" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SLIDE 4 DDK -->
+                <div class="placementdv4">
+                    <div class="placement">
+                        <div class="fond">
+
+                            <div class="fleche">
+                                <label class="go3v"> 
+                                <img class="resizefleche" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+
+                            <div class="allignementV">
+
+                                <div class="allignementH">
+                                    <div class="blackcube">
+
+                                        <h3>Le saviez-vous?</h3>
+                                        <p class="saviezvous"> En octobre 2019 la compagnie adobe a laisser fuiter 7.5 millions de compte rendant alors possible l'extraction et la consultations des données personnelles de plus 7.5 millions d'utilisateur </br>
+                                            Un cas similaire est bien plus conséquent a eu lieux en octobre 2013 dénombrant lui plus de 38 million d'utilisateur touché!
+                                        </p>
+                                        <!-- source 7.5 m clubic == https://www.clubic.com/pro/it-business/securite-et-donnees/actualite-875334-adobe-fuiter-7-5-comptes-creative-cloud.html
+                                    38m The verge == https://www.theverge.com/2013/10/29/5042434/adobe-cyberattack-takes-38-million-passwords-photoshop-source-code -->
+
+                                    </div>
+                                    <div class="centercercleddk">
+                                        <div class="placementcercle">
+                                            <div class="cercle"></div>
+                                            <div class="cercle"></div>
+                                            <div class="cercle"></div>
+                                            <div class="cercleselect"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="fleche">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="barre_de_fond">
+                    <h1> Vecteur </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="log4">
+        <div id="4" class="recepmenu">
+            <!-- DIV reception header -->
+        </div>
+        <!------- 3D ------------------------------->
+        <div class="3d">
+            <div class="screen">
+                <!-- SLIDE 1 -->
+                <div class="placementd_3d">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <!--div pour mettre des fleche a gauche-->
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Autodesk Maya, 3ds Max et Zbrush :</p>
+                                    <img class="logophrase_3d" src="sources/3ds_max_logo.png">
+                                    <img class="logophrase_3d" src="sources/logo_of_maya.png">
+                                    <img class="logophrase_3d" src="sources/zbrush.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte_blender_wings3d" src="sources/blender.png">
+                                            <h2 class="titre_logo">BLENDER</h2>
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> logiciel gratuit </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> exporter les fichiers vers d’autres formats</p>
+                                                </div>
+                                                <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> rendu GPU ou CPU </p>
+                                                </div>
+                                                      <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=TPrnSACiTJ4"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 5 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/blender"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+                                        <div class="taille_apercu1">
+                                            <img class="apercu1" src="sources/img_blender_1.png">
+                                        </div>
+                                        <div class="taille_apercu2">
+                                            <img class="apercu2" src="sources/img_blender_2.png">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go2_3d"> 
+									<img class="resizefleche-right" src="sources/arrow.svg">  
+								</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--SLIDE 2 -->
+                <div class="placementd_3d_2">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <label class="go1_3d"> 
+							<img class="resizefleche" src="sources/arrow.svg">  
+						</label>
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Autodesk Maya, 3ds Max et Zbrush :</p>
+                                    <img class="logophrase_3d" src="sources/3ds_max_logo.png">
+                                    <img class="logophrase_3d" src="sources/logo_of_maya.png">
+                                    <img class="logophrase_3d" src="sources/zbrush.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte_k3d" src="sources/logo_k3d.png">
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <h2 class="titre_logo">K3D</h2>
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage"> L'interface intuitive </p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">  Linux , MacOS X  Windows </p>
+                                                </div>
+                                                      <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=b7nUioj7akU"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/rancher/k3d"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+                                        <div class="taille_apercu1">
+                                            <img class="apercu1" src="sources/img_k3d_1.png">
+                                        </div>
+                                        <div class="taille_apercu2">
+                                            <img class="apercu2" src="sources/img_k3d_2.png">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercle"></div>
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go3_3d"> 
+									<img class="resizefleche-right" src="sources/arrow.svg">  
+								</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE 3 -->
+                <div class="placementd_3d_3">
+                    <div class="placement3v">
+                        <div class="fond3">
+
+                            <div class="fleche">
+                                <label class="go2_3d"> 
+									<img class="resizefleche" src="sources/arrow.svg">  
+								</label>
+                            </div>
+                            <div class="placement3v">
+                                <div class="phrasefond">
+                                    <p class="phrase_alternatives">Voici une alternative à Autodesk Maya, 3ds Max et Zbrush :</p>
+                                    <img class="logophrase_3d" src="sources/3ds_max_logo.png">
+                                    <img class="logophrase_3d" src="sources/logo_of_maya.png">
+                                    <img class="logophrase_3d" src="sources/zbrush.png">
+                                </div>
+                                <div class="ressere">
+                                    <div class="placement3v">
+                                        <div class="carte">
+
+                                            <img class="logocarte_blender_wings3d" src="sources/logo_wings3d.png">
+                                            <h2 class="titre_logo">WINGS 3D</h2>
+                                            <!-- spacetexte permet de mettre les textes en colonne est de mettre de l'éspace entre eux -->
+                                            <div class="spacetexte">
+                                                <!--Puce 1 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">Il peut importer le format 3D Studio (3DS), Nendo (NDO)Adobe Illustrator 8 (AI) et bien d'autre</p>
+                                                </div>
+                                                <!--Puce 2 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/check.svg">
+                                                    <p class="texte_avantage">simplicité d’utilisation</p>
+                                                </div>
+                                                       <!--Puce 3 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/tuto_projet.png">
+                                                    <a class="acarte" href="https://www.youtube.com/watch?v=sToMXoFK8X8"> tutoriel vidéo</a>
+                                                </div>
+                                                <!--Puce 4 -->
+                                                <div class="texte">
+                                                    <img class="check" src="sources/projet_code.png">
+                                                    <a class="acarte" href="https://github.com/bjorng/wings"> code source</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="dlbutton">
+                                                <p class="buttonplacement">Télécharger</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Mise en place des apercus logiciel -->
+                                    <div class="apercuslogcol">
+                                        <div class="taille_apercu1">
+                                            <img class="apercu1" src="sources/img_wings3d_1.png">
+                                        </div>
+                                        <div class="taille_apercu2">
+                                            <img class="apercu2" src="sources/img_wings3d_2.png">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="centercercle">
+                                    <div class="placementcercle">
+                                        <div class="cercle"></div>
+                                        <div class="cercle"></div>
+                                        <div class="cercleselect"></div>
+                                        <div class="cercle"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fleche changement de slide -->
+                            <div class="fleche">
+                                <label class="go4_3d"> 
+                                    <img class="resizefleche-right" src="sources/arrow.svg">  
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 4 ddk -->
+                <div class="placementd_3d_4">
+                    <div class="placement">
+                        <div class="fond">
+
+                            <div class="fleche">
+                                <label class="go3_3d"> 
+                                <img class="resizefleche" src="sources/arrow.svg">  
+                            </label>
+                            </div>
+
+                            <div class="allignementV">
+
+                                <div class="allignementH">
+                                    <div class="blackcube">
+
+                                        <h3>Le saviez-vous?</h3>
+                                        <p class="saviezvous"> Blender est un des logiciel 3d les plus utilisé dans le monde professionel. </br>
+                                            Blender à connus un essort important lors de la libération de son code source permettant à des équipes de développeur d'apporter de nouvelle fonctionnalités et rendant sont interface beaucoup plus ergonomique (principal défaults du logiciel avant la libération
+                                            de sont code !)</p>
+                                        <!--source : wikipedia blender https://fr.wikipedia.org/wiki/Blender -->
+
+                                    </div>
+                                    <div class="centercercleddk">
+                                        <div class="placementcercle">
+                                            <div class="cercle"></div>
+                                            <div class="cercle"></div>
+                                            <div class="cercle"></div>
+                                            <div class="cercleselect"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="fleche">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="barre_de_fond">
+                    <h1> 3D </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PARTIE 3 PRESENTATION DES LOGICIEL FIN -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="placementlogfoot">
+            <a href="#top"> <img class="logofooter" src="sources/w_mozilla.png"> </a>
+        </div>
+        <div class="colf">
+            <ul class="ulfoot">
+                <li class="lifoot"><a class="afoot" id="donate-footer-btn" href="https://donate.mozilla.org/">Faire un don</a></li>
+                <li class="lifoot"><a class="afoot" href="https://www.mozilla.org/about/legal/terms/mozilla/">Mentions légales</a></li>
+                <li class="lifoot"><a class="afoot" href="https://creativecommons.org/licenses/by/4.0">Licence</a></li>
+            </ul>
+        </div>
+
+        <div class="colf">
+            <ul class="ulfoot">
+                <li class="lifoot"><a class="afoot" href="https://www.mozilla.org/about/governance/policies/participation/">Directives relatives à la participation</a></li>
+                <li class="lifoot"><a class="afoot" href="https://mozilla.org/privacy/websites/">Confidentialité</a></li>
+                <li class="lifoot"><a class="afoot" href="https://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+            </ul>
+        </div>
+
+        <div class="phrasefoot">
+            <p class="pfoot">Mozilla est une organisation internationale à but non lucratif, déterminée à vous faire reprendre le contrôle de votre vie numérique en ligne et à définir l’avenir du Web dans l’intérêt de tous. Plus d’informations sur <a class="afoot" href="https://foundation.mozilla.org">foundation.mozilla.org</a></p>
+        </div>
+    </footer>
+    <!-- FOOTER FIN -->
+
+    <!-- PARTIE JQUERY -->
+    <script>
+        $(document).ready(function() {
+
+            /*script partie Montage_video */
+
+            $('.go1').click(function() {
+                $('.placementd2').hide();
+                $('.placementd3').hide();
+                $('.placementd4').hide();
+                $('.placementd').show();
+            });
+            $('.go2').click(function() {
+                $('.placementd').hide();
+                $('.placementd3').hide();
+                $('.placementd4').hide();
+                $('.placementd2').show();
+            });
+            $('.go3').click(function() {
+                $('.placementd').hide();
+                $('.placementd2').hide();
+                $('.placementd4').hide();
+                $('.placementd3').show();
+            });
+            $('.go4').click(function() {
+                $('.placementd').hide();
+                $('.placementd2').hide();
+                $('.placementd3').hide();
+                $('.placementd4').show();
+            });
+
+            /* script partie vecteur */
+            $('.go1v').click(function() {
+                $('.placementdv2').hide();
+                $('.placementdv3').hide();
+                $('.placementdv4').hide();
+                $('.placementv').show();
+            });
+            $('.go2v').click(function() {
+                $('.placementv').hide();
+                $('.placementdv3').hide();
+                $('.placementdv4').hide();
+                $('.placementdv2').show();
+            });
+            $('.go3v').click(function() {
+                $('.placementv').hide();
+                $('.placementdv2').hide();
+                $('.placementdv4').hide();
+                $('.placementdv3').show();
+            });
+            $('.go4v').click(function() {
+                $('.placementv').hide();
+                $('.placementdv2').hide();
+                $('.placementdv3').hide();
+                $('.placementdv4').show();
+            });
+
+            /*script phomontage*/
+
+            $('.go1p').click(function() {
+                $('.placementdp2').hide();
+                $('.placementd3p').hide();
+                $('.placementdp4').hide()
+                $('.placementdp').show();
+            });
+            $('.go2p').click(function() {
+                $('.placementdp').hide();
+                $('.placementdp3').hide();
+                $('.placementdp4').hide()
+                $('.placementdp2').show();
+            });
+            $('.go3p').click(function() {
+                $('.placementdp').hide();
+                $('.placementdp2').hide();
+                $('.placementdp4').hide()
+                $('.placementdp3').show();
+            });
+            $('.go4p').click(function() {
+                $('.placementdp').hide();
+                $('.placementdp2').hide();
+                $('.placementdp3').hide();
+                $('.placementdp4').show();
+            });
+
+            /*script 3d*/
+
+            $('.go1_3d').click(function() {
+                $('.placementd_3d_2').hide();
+                $('.placementd_3d_3').hide();
+                $('.placementd_3d_4').hide();
+                $('.placementd_3d').show();
+            });
+            $('.go2_3d').click(function() {
+                $('.placementd_3d').hide();
+                $('.placementd_3d_3').hide();
+                $('.placementd_3d_4').hide();
+                $('.placementd_3d_2').show();
+            });
+            $('.go3_3d').click(function() {
+                $('.placementd_3d').hide();
+                $('.placementd_3d_2').hide();
+                $('.placementd_3d_4').hide();
+                $('.placementd_3d_3').show();
+            });
+            $('.go4_3d').click(function() {
+                $('.placementd_3d').hide();
+                $('.placementd_3d_2').hide();
+                $('.placementd_3d_3').hide();
+                $('.placementd_3d_4').show();
+            });
+        });
+    </script>
+
+</body>
+
 </html>
