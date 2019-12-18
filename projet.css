@@ -1,800 +1,589 @@
-    /* default css */
-    
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: 'Zilla Slab', serif;
-    }
-    
-    html {
-        scroll-behavior: smooth;
-        /*proximity=plus permissif que mandatory*/
-    }
-    /*site design modification généraliser*/
-    
-    h2 {
-        font-size: 22px;
-    }
-    /*Modification sur les class de segmentation 
+        /* default css */
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Zilla Slab', serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            /*proximity=plus permissif que mandatory*/
+        }
+        /*site design modification généraliser*/
+        
+        h2 {
+            font-size: 22px;
+        }
+        /*Modification sur les class de segmentation 
 du site*/
-    
-    .OS {
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .tableau {
-        width: 100%;
-        height: 100vh;
-        background-color: #e7e5e5;
-    }
-    
-    .log,
-    .log2,
-    .log3,
-    .log4 {
-        width: 100%;
-        height: 100vh;
-    }
-    /*---------------------------------------Ajout css*/
-    
-    p,
-    .liheader {
-        font-size: 15px;
-        list-style: none;
-    }
-    
-    .ulheader {
-        display: flex;
-        margin-right: 100px;
-        margin-top: 3%;
-    }
-    
-    label {
-        cursor: pointer;
-    }
-    
-    .liheader {
-        margin-right: 60px;
-    }
-    /*design du menu*/
-    /*--------------------------------------------------------*/
-    
-    header {
-        width: 100vw;
-        height: 10vh;
-        background-color: #FF4F5E;
-        display: flex;
-        justify-content: space-between;
-        box-shadow: 0px 2px 5px #959595;
-        position: fixed;
-        z-index: 1;
-    }
-    
-    .logo {
-        height: 70%;
-    }
-    
-    .toph {
-        margin-top: 0.5%;
-        margin-left: 1%;
-    }
-    
-    .input_checkbox {
-        display: none;
-    }
-    
-    .typo-h {
-        color: white;
-        font-size: 19px;
-        padding-right: 25px;
-        list-style: none;
-        text-decoration: none;
-    }
-    
-    .label_menu {
-        font-size: 40px;
-        margin-top: 15px;
-        margin-right: 20px;
-        cursor: pointer;
-        display: none;
-    }
-    /*----fin-*/
-    /*première page sur l'Opensource*/
-    
-    .page_start {
-        height: 100vh;
-        display: flex;
-    }
-    
-    .image_debut {
-        width: 25%;
-        margin-top: 10%;
-        margin-left: 10%;
-    }
-    
-    .groupe_texte_opensource {
-        display: flex;
-        flex-direction: column;
-        margin-top: 21%;
-        margin-left: 11%;
-    }
-    
-    .opensource_text {
-        font-size: 75px;
-        font-style: italic;
-    }
-    
-    .opensource_text_petit {
-        font-size: 21.5px;
-        font-style: italic;
-        margin-top: 3%;
-    }
-    
-    h1 {
-        color: rgb(0, 0, 0);
-        background-color: white;
-        width: 45%;
-        text-align: center;
-        padding-bottom: 15px;
-    }
-    /*Modification div propre au design */
-    
-    .screen {
-        height: 89vh;
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 1vh;
-    }
-    
-    .fond,
-    .fond2,
-    .fond3 {
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        justify-content: space-around;
-        background-color: #E7E5E2;
-    }
-    
-    .barre_de_fond {
-        background-color: #E7E5E2;
-    }
-    
-    .carte {
-        background-color: white;
-        width: 300px;
-        height: 415px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-        margin-right: 25px;
-        justify-content: space-around;
-        box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);
-    }
-    /*-------Logocarte--*/
-    
-    .logocarte_gimp {
-        width: 90%;
-        margin-top: 10px;
-    }
-    
-    .logocarte_krita {
-        width: 39%;
-        margin-top: 10px;
-    }
-    
-    .logocarte_photoflare {
-        width: 29%;
-        margin-top: 10px;
-    }
-    
-    .logocarte_blender_wings3d {
-        width: 40%;
-        margin-top: 10px;
-    }
-    
-    .logocarte_k3d {
-        width: 50%;
-        margin-top: 10px;
-    }
-    
-    .logocarte {
-        width: 50px;
-        height: 50px;
-        margin-top: 10px;
-    }
-    /*modification //placement des elément d'un carte */
-    
-    .texte {
-        display: flex;
-        width: 250px;
-      
-    }
-    
-    .texte_avantage {
-        font-size: 15px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-
-    }
-    
-    .texte_krita {
-        display: flex;
-        padding-bottom: -10%;
-    }
-    
-    .spacetexte {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        justify-content: space-around;
-        margin-bottom: 2px;
-        height: 230px;
-        width: 250px;
-       
-    }
-    
-    .check {
-        width: 30px;
-        margin-left: 25px;
-        margin-right: 15px;
-    }
-    
-    .dlbutton {
-        width: 150px;
-        height: 50px;
-        background-color: #FF4F5E;
-        margin-bottom: 15px;
-    }
-    
-    .buttonplacement {
-        font-size: 19px;
-        margin-top: 9%;
-        color: #FFF;
-        display: flex;
-        justify-content: center;
-    }
-    /*modification sur les apercus logiciel*/
-    
-    .taille_apercu1 {
-        width: 404px;
-        height: 152px;
-        overflow: hidden;
-    }
-    
-    .apercu1 {
-        width: 404px;
-        height: 152px;
-    }
-    
-    .apercu2 {
-        width: 404px;
-        height: 237px;
-        margin-top: 25px;
-    }
-    
-    .taille_apercu2 {
-        width: 404px;
-        overflow: hidden;
-    }
-    
-    .apercu2_krita {
-        width: 120%;
-        height: 237px;
-        margin-top: 25px;
-    }
-    
-    .apercuslogcol {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
-    }
-    /*modification sur les div de fleche // rotation */
-    
-    .resizefleche {
-        width: 50px;
-        height: 50px;
-        transform: rotate(180deg);
-    }
-    
-    .resizefleche-right {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .fleche {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        width: 50px;
-    }
-    
-    .recepmenu {
-        height: 10vh;
-    }
-    /*div de modification // placement des cercle de navigation */
-    
-    .cercleselect {
-        background-color: black;
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-    }
-    
-    .cercle {
-        background-color: black;
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        opacity: 50%;
-    }
-    
-    .placementcercle {
-        display: flex;
-        width: 75px;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
-    
-    .centercercle {
-        display: flex;
-        height: 861;
-        justify-content: center;
-        margin-top: 25px;
-    }
-    
-    .ressere {
-        display: flex;
-    }
-    /*modification lié a la pgrase de description de l'affichage*/
-    
-    .phrasefond {
-        display: flex;
-        width: 675px;
-        margin-top: 20px;
-    }
-    .phrase_alternatives
-    {
-        margin-top: 10px;
-    }
-    
-    .logophrase {
-        width: 40px;
-        margin-left: 13px;
-    }
-    
-    .logophrase_3d {
-        width: 6%;
-        margin-left: 3%;
-    }
-    /*-----PLACEMENT JQUERRY-----*/
-    
-    .placementdp2 {
-        display: none;
-    }
-    
-    .placementdp3 {
-        display: none;
-    }
-    
-    .placementd_3d_2,
-    .placementd_3d_3 {
-        display: none;
-    }
-    
-    .placementd2,
-    .placementdv3,
-    .placementd3,
-    .placementdv2 {
-        display: none;
-    }
-    
-    .placement,
-    .placement3v {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .placement2,
-    .placement3 {
-        display: flex;
-        flex-direction: column;
-        display: none;
-    }
-    /* ------- CSS TABLEAU ---------*/
-    
-    table {
-        text-align: center;
-        border-collapse: collapse;
-        /* Les bordures du tableau seront collées (plus joli) */
-    }
-    
-    td {
-        border: 1px solid black;
-        width: 300px;
-        font-size: 20px;
-    }
-    
-    tr {
-        width: 50px;
-        height: 50px;
-    }
-    
-    .allignementV {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .allignementH {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 80vh;
-    }
-    
-    .cuttop {
-        border-top: none;
-    }
-    
-    .cutleft {
-        border-left: none;
-    }
-    
-    .cutright {
-        border-right: none;
-    }
-    
-    .cutbot {
-        border-bottom: none;
-    }
-    
-    .resize {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .title {
-        font-size: 23px;
-    }
-    
-    .phrasetab {
-        font-size: 20px;
-        margin-top: 20px;
-    }
-    /*----------le saviez vous -----------*/
-    
-    .blackcube {
-        background-color: black;
-        width: 800px;
-        height: 300px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .saviezvous {
-        color: white;
-        font-size: 25px;
-        margin-top: 10px;
-        margin-left: 50px;
-        margin-right: 50px;
-        text-align: justify;
-    }
-    
-    h3 {
-        color: white;
-        font-size: 40px;
-        margin-left: 50px;
-        text-decoration: underline;
-        text-decoration-color: white;
-        text-underline-position: under; 
-    }
-    
-    .centercercleddk {
-        display: flex;
-        height: 861;
-        justify-content: center;
-        margin-top: 100px;
-    }
-    /* ajout Jquerry lié au le saviez vous */
-    
-    .placementd4,
-    .placementdv4,
-    .placementd_3d_4,
-    .placementdp4 {
-        display: none;
-    }
-    /* FOOTER */
-    
-    .logofooter {
-        height: 50%;
-    }
-    
-    hr {
-        background-color: black;
-    }
-    
-    footer {
-        background-color: black;
-        height: 120px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .colf {
-        margin-left: 20px;
-        margin-top: 5px;
-    }
-    
-    .lifoot {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        height: 20px;
-        list-style: square;
-        margin-top: 7px;
-    }
-    
-    .afoot {
-        color: white;
-        font-size: 15px;
-        text-decoration: none;
-        padding-top: 30px;
-    }
-    
-    .pfoot {
-        color: white;
-        font-size: 12px;
-    }
-    
-    .placementlogfoot {
-        margin-top: 25px;
-    }
-    
-    .phrasefoot {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    /*REDIRECTION*/
-    .acarte{
-        font-size: 15px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        text-decoration: none;
-        color: black;
-    }
-    .acarte:hover
-    {
-        text-decoration: underline;
-        text-decoration-color: black;
-
-    }
-
-    /*-------RESPONSIVE TIME --------*/
-    
-    @media (min-height: 600px)
-    /*media queries pour un affichage en hauteur supérieur a 600px (24 pouces)*/
-    
-    {
+        
+        .OS {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .tableau {
+            width: 100%;
+            height: 100vh;
+            background-color: #e7e5e5;
+        }
+        
+        .log,
+        .log2,
+        .log3,
+        .log4 {
+            width: 100%;
+            height: 100vh;
+        }
+        /*---------------------------------------Ajout css*/
+        
+        p,
+        .liheader {
+            font-size: 15px;
+            list-style: none;
+        }
+        
+        .ulheader {
+            display: flex;
+            margin-right: 100px;
+            margin-top: 3%;
+        }
+        
+        label {
+            cursor: pointer;
+        }
+        
+        .liheader {
+            margin-right: 60px;
+        }
+        /*design du menu*/
+        /*--------------------------------------------------------*/
+        
+        header {
+            width: 100vw;
+            height: 10vh;
+            background-color: #FF4F5E;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 2px 5px #959595;
+            position: fixed;
+            z-index: 1;
+        }
+        
+        .logo {
+            height: 70%;
+        }
+        
+        .toph {
+            margin-top: 0.5%;
+            margin-left: 1%;
+        }
+        
+        .input_checkbox {
+            display: none;
+        }
+        
+        .typo-h {
+            color: white;
+            font-size: 19px;
+            padding-right: 25px;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        .label_menu {
+            font-size: 40px;
+            margin-top: 15px;
+            margin-right: 20px;
+            cursor: pointer;
+            display: none;
+        }
+        /*----fin-*/
+        /*première page sur l'Opensource*/
+        
+        .page_start {
+            height: 100vh;
+            display: flex;
+        }
+        
+        .image_debut {
+            width: 25%;
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+        
+        .groupe_texte_opensource {
+            display: flex;
+            flex-direction: column;
+            margin-top: 21%;
+            margin-left: 11%;
+        }
+        
+        .opensource_text {
+            font-size: 75px;
+            font-style: italic;
+        }
+        
+        .opensource_text_petit {
+            font-size: 21.5px;
+            font-style: italic;
+            margin-top: 3%;
+        }
+        
+        h1 {
+            color: rgb(0, 0, 0);
+            background-color: white;
+            width: 45%;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+        /*Modification div propre au design */
+        
+        .screen {
+            height: 89vh;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 1vh;
+        }
+        
+        .fond,
+        .fond2,
+        .fond3 {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            background-color: #E7E5E2;
+        }
+        
+        .barre_de_fond {
+            background-color: #E7E5E2;
+        }
+        
+        .carte {
+            background-color: white;
+            width: 300px;
+            height: 415px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            margin-right: 25px;
+            justify-content: space-around;
+            box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.1);
+        }
+        /*-------Logocarte--*/
+        
+        .logocarte_gimp {
+            width: 90%;
+            margin-top: 10px;
+        }
+        
+        .logocarte_krita {
+            width: 39%;
+            margin-top: 10px;
+        }
+        
+        .logocarte_photoflare {
+            width: 29%;
+            margin-top: 10px;
+        }
+        
+        .logocarte_blender_wings3d {
+            width: 40%;
+            margin-top: 10px;
+        }
+        
+        .logocarte_k3d {
+            width: 50%;
+            margin-top: 10px;
+        }
+        
+        .logocarte {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+        }
+        /*modification //placement des elément d'un carte */
+        
+        .texte {
+            display: flex;
+            width: 250px;
+        }
+        
+        .texte_avantage {
+            font-size: 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .texte_krita {
+            display: flex;
+            padding-bottom: -10%;
+        }
+        
+        .spacetexte {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            justify-content: space-around;
+            margin-bottom: 2px;
+            height: 230px;
+            width: 250px;
+        }
+        
+        .check {
+            width: 30px;
+            margin-left: 25px;
+            margin-right: 15px;
+        }
+        
+        .dlbutton {
+            width: 150px;
+            height: 50px;
+            background-color: #FF4F5E;
+            margin-bottom: 15px;
+        }
+        
+        .buttonplacement {
+            font-size: 19px;
+            margin-top: 9%;
+            color: #FFF;
+            display: flex;
+            justify-content: center;
+        }
+        /*modification sur les apercus logiciel*/
+        
+        .taille_apercu1 {
+            width: 404px;
+            height: 152px;
+            overflow: hidden;
+        }
+        
+        .apercu1 {
+            width: 404px;
+            height: 152px;
+        }
+        
+        .apercu2 {
+            width: 404px;
+            height: 237px;
+            margin-top: 25px;
+        }
+        
+        .taille_apercu2 {
+            width: 404px;
+            overflow: hidden;
+        }
+        
+        .apercu2_krita {
+            width: 120%;
+            height: 237px;
+            margin-top: 25px;
+        }
+        
+        .apercuslogcol {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        /*modification sur les div de fleche // rotation */
+        
+        .resizefleche {
+            width: 50px;
+            height: 50px;
+            transform: rotate(180deg);
+        }
+        
+        .resizefleche-right {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .fleche {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 50px;
+        }
+        
+        .recepmenu {
+            height: 10vh;
+        }
+        /*div de modification // placement des cercle de navigation */
+        
+        .cercleselect {
+            background-color: black;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        }
+        
+        .cercle {
+            background-color: black;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            opacity: 50%;
+        }
+        
+        .placementcercle {
+            display: flex;
+            width: 75px;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .centercercle {
+            display: flex;
+            height: 861;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        
+        .ressere {
+            display: flex;
+        }
+        /*modification lié a la pgrase de description de l'affichage*/
+        
+        .phrasefond {
+            display: flex;
+            width: 675px;
+            margin-top: 20px;
+        }
+        
+        .phrase_alternatives {
+            margin-top: 10px;
+        }
+        
+        .logophrase {
+            width: 40px;
+            margin-left: 13px;
+        }
+        
+        .logophrase_3d {
+            width: 6%;
+            margin-left: 3%;
+        }
+        /*-----PLACEMENT JQUERRY-----*/
+        
+        .placementdp2 {
+            display: none;
+        }
+        
+        .placementdp3 {
+            display: none;
+        }
+        
+        .placementd_3d_2,
+        .placementd_3d_3 {
+            display: none;
+        }
+        
+        .placementd2,
+        .placementdv3,
+        .placementd3,
+        .placementdv2 {
+            display: none;
+        }
+        
         .placement,
         .placement3v {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
         }
-    }
-    @media (max-width: 900px) /* media query 900 px */
-    {
-        .apercu1,
-        .apercu2
-        {
-            display: none;
-        }
-        .apercuslogcol
-        {
-            display: none;
-        }
-        .carte
-        {
-            margin-left: 200px;
-        }
-        .blackcube {
         
-        width: 500px;
-        height: 200px;
-        border-radius: 15px;
-        }
-        .saviezvous {
-        color: white;
-        font-size: 15px;
-        margin-top: 5px;
-        margin-left: 25px;
-        margin-right: 25px;
-        text-align: justify;
-        }
-    
-        h3 {
-        color: white;
-        font-size: 25px;
-        margin-left: 25px;
-        text-decoration: underline;
-        text-decoration-color: white;
-        text-underline-position: under; 
-        }
-        .page_start
-        {
+        .placement2,
+        .placement3 {
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            display: none;
         }
-        .image_debut
-        {
-            margin-left: 250px;
-        }
-
-    }
-     @media (max-width: 770px)
-     {
-        .phrasefond
-        {
-            width: 400px;
-        }
-        .carte
-        {
-            margin-left: 100px;
-        }
-        .pfoot
-        {
-            font-size: 8px;
-        }   
-        .afoot {
-        color: white;
-        font-size: 8px;
-        text-decoration: none;
-        padding-top: 30px;
-        }
-        .logofooter {
-        height: 25%;
-        }
-        .blackcube {
+        /* ------- CSS TABLEAU ---------*/
         
-        width: 350px;
-        height: 170px;
-        margin-top: 80px;
-
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            /* Les bordures du tableau seront collées (plus joli) */
         }
-        .saviezvous {
-        color: white;
-        font-size: 13px;
-
-        }
-     }
-     @media (max-width: 550px)
-     {
-        .image_debut
-        {
-            margin-left: 120px;
-        }
-        .opensource_text
-        {
-            font-size: 40px;
-        }
-        .opensource_text_petit
-        {
-            font-size: 15px;
-        }
-        td
-        {
-            font-size:10px; 
-        }
-        .phrasetab {
-        font-size: 10px;
-
-        }
-        .phrase_alternatives
-        {
-            font-size: 10px;
-        }
-        .phrasefond
-        {
-            width: 250px;
-            margin-left: 50px;
-        }
-        .logophrase,
-        .logophrase_3d
-        {
-            width: 20px;
-            height: 20px;
-            margin-top: 10px;
-        }
-        .carte
-        {
-        width: 200px;
-        height: 315px;
-        margin-left: 50px;
-        }
-        .check
-        {
-            width: 20px;
-            height: 20px;
-            margin-top: 5px;
-        }
-        .texte_avantage
-        {
-            font-size: 10px;
-        }
-        .texte,
-        .texte_krita
-        {
-            width: 180px;
-            margin-left: 10px;
-        }
-        .fleche
-         {
-
-            width: 20px;
-         }
-         .dlbutton
-         {
-            width: 100px;
-            height: 50px;
-         }
-        .fond,
-        .fond2,
-        .fond3 {
-        height: 80vh;
-        display: flex;
-        justify-content: center;
-        justify-content: space-around;
-        background-color: #E7E5E2;
-        }
-        h1
-        {
+        
+        td {
+            border: 1px solid black;
+            width: 300px;
             font-size: 20px;
         }
-        .resizefleche {
-        width: 20px;
-        height: 20px;
-        }
-    
-        .resizefleche-right {
-        width: 20px;
-        height: 20px;
-        }
-        .blackcube {
         
-        width: 300px;
-        height: 150px;
-        margin-top: 100px;
+        tr {
+            width: 50px;
+            height: 50px;
         }
-        .saviezvous {
-        color: white;
-        font-size: 10px;
-
+        
+        .allignementV {
+            display: flex;
+            justify-content: center;
         }
-    
-        h3 {
-        color: white;
-        font-size: 15px;
-        margin-left: 25px;
+        
+        .allignementH {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
         }
-        .buttonplacement
-        {
-            font-size: 15px;
+        
+        .cuttop {
+            border-top: none;
         }
-        .title {
-        font-size: 15px;
+        
+        .cutleft {
+            border-left: none;
         }
+        
+        .cutright {
+            border-right: none;
+        }
+        
+        .cutbot {
+            border-bottom: none;
+        }
+        
         .resize {
-        width: 15px;
-        height: 15px;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .title {
+            font-size: 23px;
+        }
+        
+        .phrasetab {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        /*----------le saviez vous -----------*/
+        
+        .blackcube {
+            background-color: black;
+            width: 800px;
+            height: 300px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .saviezvous {
+            color: white;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: justify;
+        }
+        
+        h3 {
+            color: white;
+            font-size: 40px;
+            margin-left: 50px;
+            text-decoration: underline;
+            text-decoration-color: white;
+            text-underline-position: under;
+        }
+        
+        .centercercleddk {
+            display: flex;
+            height: 861;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        /* ajout Jquerry lié au le saviez vous */
+        
+        .placementd4,
+        .placementdv4,
+        .placementd_3d_4,
+        .placementdp4 {
+            display: none;
+        }
+        /* FOOTER */
+        
+        .logofooter {
+            height: 50%;
+        }
+        
+        hr {
+            background-color: black;
+        }
+        
+        footer {
+            background-color: black;
+            height: 120px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .colf {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .lifoot {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            height: 20px;
+            list-style: square;
+            margin-top: 7px;
+        }
+        
+        .afoot {
+            color: white;
+            font-size: 15px;
+            text-decoration: none;
+            padding-top: 30px;
+        }
+        
+        .pfoot {
+            color: white;
+            font-size: 12px;
+        }
+        
+        .placementlogfoot {
+            margin-top: 25px;
+        }
+        
+        .phrasefoot {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /*REDIRECTION*/
+        
+        .acarte {
+            font-size: 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .acarte:hover {
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+        /*-------RESPONSIVE TIME --------*/
+        
+        @media (min-height: 600px)
+        /*media queries pour un affichage en hauteur supérieur a 600px (24 pouces)*/
+        
+        {
+            .placement,
+            .placement3v {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
         }
 
-     }
