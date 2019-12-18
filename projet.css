@@ -356,6 +356,10 @@ du site*/
         width: 675px;
         margin-top: 20px;
     }
+    .phrase_alternatives
+    {
+        margin-top: 10px;
+    }
     
     .logophrase {
         width: 40px;
@@ -465,26 +469,29 @@ du site*/
     .blackcube {
         background-color: black;
         width: 800px;
-        height: 350px;
+        height: 300px;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     
     .saviezvous {
         color: white;
         font-size: 25px;
-        margin-top: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
         text-align: justify;
     }
     
     h3 {
         color: white;
         font-size: 40px;
-        margin-top: 15px;
-        margin-left: 10px;
+        margin-left: 50px;
+        text-decoration: underline;
+        text-decoration-color: white;
+        text-underline-position: under; 
     }
     
     .centercercleddk {
@@ -561,7 +568,6 @@ du site*/
         margin-top: 5px;
         margin-bottom: 5px;
         text-decoration: none;
-        margin-left: 70px;
         color: black;
     }
     .acarte:hover
